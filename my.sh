@@ -13,28 +13,26 @@
 
 # echo "Remove config profile"
   	
-        sudo rm -rf /Volumes/Macintosh\ HD/var/db/ConfigurationProfiles/Settings/.cloudConfigHasActivationRecord
-	sudo rm -rf /Volumes/Macintosh\ HD/var/db/ConfigurationProfiles/Settings/.cloudConfigRecordFound
-	sudo touch /Volumes/Macintosh\ HD/var/db/ConfigurationProfiles/Settings/.cloudConfigProfileInstalled
-	sudo touch /Volumes/Macintosh\ HD/var/db/ConfigurationProfiles/Settings/.cloudConfigRecordNotFound
+ 	rm -rf /Volumes/Macintosh\ HD/var/db/ConfigurationProfiles/Settings/.cloudConfigHasActivationRecord
+	rm -rf /Volumes/Macintosh\ HD/var/db/ConfigurationProfiles/Settings/.cloudConfigRecordFound
+	touch /Volumes/Macintosh\ HD/var/db/ConfigurationProfiles/Settings/.cloudConfigProfileInstalled
+	touch /Volumes/Macintosh\ HD/var/db/ConfigurationProfiles/Settings/.cloudConfigRecordNotFound
 echo -e "Successfully Remove config profile rm -rf"
 
-sudo rm /var/db/ConfigurationProfiles/Settings/.cloudConfigHasActivationRecord
-sudo rm /var/db/ConfigurationProfiles/Settings/.cloudConfigRecordFound
-sudo touch /var/db/ConfigurationProfiles/Settings/.cloudConfigProfileInstalled
-sudo touch /var/db/ConfigurationProfiles/Settings/.cloudConfigRecordNotFound
+ rm /var/db/ConfigurationProfiles/Settings/.cloudConfigHasActivationRecord
+ rm /var/db/ConfigurationProfiles/Settings/.cloudConfigRecordFound
+ touch /var/db/ConfigurationProfiles/Settings/.cloudConfigProfileInstalled
+ touch /var/db/ConfigurationProfiles/Settings/.cloudConfigRecordNotFound
 echo -e "Successfully Remove config profile rm"
 
-sudo rm -rf /Volumes/Macintosh\ HD/var/db/ConfigurationProfiles/Settings/.cloudConfigHasActivationRecord
-sudo rm -rf /Volumes/Macintosh\ HD/var/db/ConfigurationProfiles/Settings/.cloudConfigRecordFound
-sudo touch /Volumes/Macintosh\ HD/var/db/ConfigurationProfiles/Settings/.cloudConfigProfileInstalled
-sudo touch /Volumes/Macintosh\ HD/var/db/ConfigurationProfiles/Settings/.cloudConfigRecordNotFound
+ rm -rf /Volumes/Macintosh\ HD/var/db/ConfigurationProfiles/Settings/.cloudConfigHasActivationRecord
+ rm -rf /Volumes/Macintosh\ HD/var/db/ConfigurationProfiles/Settings/.cloudConfigRecordFound
+ touch /Volumes/Macintosh\ HD/var/db/ConfigurationProfiles/Settings/.cloudConfigProfileInstalled
+ touch /Volumes/Macintosh\ HD/var/db/ConfigurationProfiles/Settings/.cloudConfigRecordNotFound
 
 
 
 
-sudo launchctl disable system/com.apple.ManagedClient.enroll
-sudo profiles show -type enrollment
-		break
-		;;
-done
+launchctl disable system/com.apple.ManagedClient.enroll
+profiles show -type enrollment
+		
